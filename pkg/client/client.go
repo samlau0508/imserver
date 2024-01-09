@@ -53,7 +53,7 @@ type Client struct {
 	wg sync.WaitGroup
 	mu sync.RWMutex
 
-	proto *okproto.okproto
+	proto *okproto.Proto
 	pongs []chan struct{}
 
 	onRecv    OnRecv
